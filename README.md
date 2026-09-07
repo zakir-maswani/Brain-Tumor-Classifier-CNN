@@ -39,9 +39,9 @@ Upload an MRI image through the browser, and the model returns a predicted tumor
 
 ```
 ┌─────────────────────────────┐        ┌─────────────────────────────┐
-│                              │        │  Prediction: Meningioma     │
-│      [ Upload MRI Scan ]     │  --->  │  Confidence: 96.42%         │
-│                              │        │                              │
+│                                  │        │          Prediction: Meningioma   │
+│      [ Upload MRI Scan ]         │  --->  │           Confidence: 96.42%      │
+│                                  │        │                                   │
 └─────────────────────────────┘        └─────────────────────────────┘
 ```
 
@@ -123,13 +123,16 @@ Input (3×128×128)
 
 ```
 brain-tumor-classifier/
-├── main.py                                   # FastAPI application & inference endpoint
-├── brain_tumor_classifier.pth                 # Trained model weights
-├── data_preprocessing_and_model_training.ipynb # Notebook: data prep + training + evaluation
+├── main.py                                   
+├── demo_video_and_images/
+|   ├── demo.png
+|   └── demo_video.mp4          
+├── data_preprocessing_and_model_training.ipynb
 ├── templates/
-│   └── index.html                             # Web UI
+│   └── index.html                             
 ├── static/
-│   └── ...                                    # CSS/JS/assets
+|   ├── style.css
+│   └── script.js                                
 ├── requirements.txt
 └── README.md
 ```
@@ -140,7 +143,7 @@ brain-tumor-classifier/
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/<your-username>/brain-tumor-classifier.git
+git clone https://github.com/<zakir-maswani>/Brain-Tumor-Classifier-CNN.git
 cd brain-tumor-classifier
 ```
 
