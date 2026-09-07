@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Brain Tumor Classifier</title>
+
+    <link rel="stylesheet"
+          href="/static/style.css">
+
+</head>
+
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <h1>Brain Tumor Classifier</h1>
+
+            <p class="subtitle">
+                Upload an MRI image to classify the tumor.
+            </p>
+
+
+            <!-- Upload Area -->
+
+            <div class="upload-box">
+
+                <input
+                    type="file"
+                    id="imageInput"
+                    accept="image/*"
+                >
+
+                <label for="imageInput">
+
+                    <div class="upload-icon">
+                        +
+                    </div>
+
+                    <p>
+                        Click to upload MRI image
+                    </p>
+
+                    <span>
+                        PNG, JPG, JPEG
+                    </span>
+
+                </label>
+
+            </div>
+
+
+            <!-- Image Preview -->
+
+            <div id="previewContainer"
+                 class="preview-container hidden">
+
+                <h3>Selected MRI</h3>
+
+                <img
+                    id="preview"
+                    src=""
+                    alt="MRI Preview"
+                >
+
+            </div>
+
+
+            <!-- Predict Button -->
+
+            <button
+                id="predictBtn"
+                disabled
+            >
+                Predict Tumor
+            </button>
+
+
+            <!-- Loading -->
+
+            <div id="loading"
+                 class="hidden">
+
+                <div class="loader"></div>
+
+                <p>
+                    Analyzing MRI...
+                </p>
+
+            </div>
+
+
+            <!-- Result -->
+
+            <div id="result"
+                 class="result hidden">
+
+                <h2>Prediction Result</h2>
+
+                <div class="prediction">
+
+                    <span>Class:</span>
+
+                    <strong id="prediction">
+                        -
+                    </strong>
+
+                </div>
+
+
+                <div class="prediction">
+
+                    <span>Confidence:</span>
+
+                    <strong id="confidence">
+                        -
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="/static/script.js"></script>
+
+</body>
+
+</html>
