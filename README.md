@@ -44,9 +44,6 @@ Upload an MRI image through the browser, and the model returns a predicted tumor
 │                                  │        │                                   │
 └─────────────────────────────┘        └─────────────────────────────┘
 ```
-
-*Add a screenshot or GIF of your running app here, e.g. `docs/demo.gif`*
-
 </div>
 
 ---
